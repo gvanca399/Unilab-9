@@ -116,10 +116,11 @@ transition: .3s ease-in-out;
     padding: 15px 50px;
     border: none;
     width: 196px;
+
 }
 .inner-main .buttons button:hover{
     font-size: 20px;
-    text-shadow: 2px 1px 10px #83cf08ef;
+    text-shadow: 2px 1px 10px #adf13fef;
 }
 .inner-main .social-icons svg{
     margin-top: 20px;
@@ -127,4 +128,83 @@ transition: .3s ease-in-out;
 .inner-main .social-icons svg:hover{
     filter: drop-shadow(0px 4px 10px #01601abb);
     transform: scale(1.1);
+}
+
+/* section part */
+
+section .section-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+section .section-container h3{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 120px 0 20px 0;
+}
+section .section-container .plant-grid .plant-box{
+    width: 370px;
+    margin: 0 auto;
+    position: relative;
+}
+section .section-container .plant-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+}
+section .section-container .plant-grid .plant-box .name-price {
+    background: rgba(54, 121, 79, 0.55);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px 15px;   
+    opacity: 0.6;
+}
+section .section-container .plant-grid .plant-box .name-price h5{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+section .section-container .plant-grid .plant-box .name-price span{
+    font-family: 'Helvetica Neue';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+section .section-container .plant-grid .plant-box .cart{
+    cursor: pointer;
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: transparent;
+    background: transparent;
+    padding: 15px 40px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+section .section-container .plant-grid .plant-box .cart:hover{
+    filter: drop-shadow(0px 4px 10px #01601abb);
+    transform: scale(1.1);
+}
+section .section-container .plant-grid .plant-box:hover .cart{
+    color: #0F6845;
+    background: #FFFFFF;
+}
+section .section-container .plant-grid .plant-box:hover .name-price{
+    opacity: 1;
 }
