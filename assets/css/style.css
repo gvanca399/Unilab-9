@@ -301,8 +301,19 @@ section .Plant-Accessories .plant-children .top-p{
 footer{
     background-color: 
     #255338;
+
+}
+footer .top-side{
+    justify-content: space-between;
     padding-top: 40px;
     padding-left: 70px;
+    padding-right: 50px;
+}
+footer .top-side .left-part .logo{
+    cursor: pointer;
+}
+footer .top-side .left-part .logo:hover{
+    filter: drop-shadow(2px 1px 10px #adf13fef);
 }
 footer .top-side .left-part p{
     font-family: 'Helvetica 35 Thin', sans-serif;
@@ -314,7 +325,7 @@ footer .top-side .left-part p{
     color: #FFFFFF;
     margin: 90px 0 20px 0;
 }
-footer .top-side .left-part.email{
+.email{
     position: relative;
 }
 
@@ -322,15 +333,67 @@ input[type=email] {
     width: 310px;
     height: 50px;
     border: 1px solid #FFFFFF;
+    background: #255338;
     border-radius: 10px;
-    font-size: 16px;
-    padding: 12px 0 12px 50px;
-    outline: none;
+    padding: 15px 0 15px 15px;
+    color: #FFFFFF;
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+footer .top-side .left-part .email img{
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    cursor: pointer;
+}
+footer .top-side .left-part .socials{
+    margin: 50px 0 30px 0;
+    gap: 25px;
+    transition: .4s ease-in-out;
+}
+footer .top-side .left-part .socials a:hover{
+    filter: drop-shadow(2px 1px 10px #adf13fef);
+    transform: scale(1.1);
+}
+footer .top-side .right-part{
+    gap: 120px;
+    display: flex;
+}
+footer .top-side .right-part h4{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+footer .top-side .right-part a{
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
     color: #FFFFFF;
+}
+.bottom-side {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 60px 20px 0;
+    border-top:  1px solid #FFFFFF;;
+}
+.bottom-side a{
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    
 }
