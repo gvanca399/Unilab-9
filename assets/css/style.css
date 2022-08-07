@@ -19,6 +19,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.only-flex{
+    display: flex;
+    align-items: center;
+}
 
 /* header */
 
@@ -95,7 +99,7 @@ transition: .3s ease-in-out;
     margin-bottom: 15px;
 }
 .inner-main .home-plants p{
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica 45 Light', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -207,4 +211,126 @@ section .section-container .plant-grid .plant-box:hover .cart{
 }
 section .section-container .plant-grid .plant-box:hover .name-price{
     opacity: 1;
+    background: #36794F;
+}
+
+/* pant care section */
+
+section .section-container .palnts-care .care-box{
+    width: 630px;
+    height:600px;
+    margin-bottom: 150px;
+}
+section .section-container .palnts-care .care-box h4{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 15px 0 15px 10px;
+}
+section .section-container .palnts-care .care-box p{
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 10px 10px;
+    text-align: start;
+}
+section .section-container .palnts-care .care-box .btn a{
+    font-family: 'Helvetica 35 Thin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #01601B;
+    float: right;
+}
+section .Plant-Accessories {
+    position: relative;
+}
+section .Plant-Accessories .flex-palnt-accessories{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+section .Plant-Accessories .flex-palnt-accessories h3{
+    margin-left: 100px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    
+}
+section .Plant-Accessories .flex-palnt-accessories img{
+    border-bottom-right-radius: 30%;
+}
+section .Plant-Accessories .plant-children{
+    position: absolute;
+    top: 20%;
+    right: 28%;
+    width: 750px;
+    background: #ECF1EE;
+    box-shadow: 10px 23px 29px 14px rgba(215, 242, 225, 0.2);
+    border-radius: 16px;
+}
+section .Plant-Accessories .plant-children .top-p{
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding: 100px 125px 0 125px;
+}
+.bottom-p{
+    padding: 20px 125px 100px 125px;
+}
+
+/* footer */
+
+footer{
+    background-color: 
+    #255338;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+footer .top-side .left-part p{
+    font-family: 'Helvetica 35 Thin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 90px 0 20px 0;
+}
+footer .top-side .left-part.email{
+    position: relative;
+}
+
+input[type=email] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 0 12px 50px;
+    outline: none;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
 }
