@@ -177,7 +177,7 @@ section .section-container .plant-grid .plant-box .name-price h5{
     line-height: 23px;
     color: #FFFFFF;
 }
-section .section-container .plant-grid .plant-box .name-price span{
+section .section-container .plant-grid .plant-box .name-price button{
     font-family: 'Helvetica Neue';
     font-style: italic;
     font-weight: 400;
@@ -185,7 +185,7 @@ section .section-container .plant-grid .plant-box .name-price span{
     line-height: 22px;
     color: #FFFFFF;
 }
-section .section-container .plant-grid .plant-box .cart{
+section .section-container .plant-grid .plant-box button{
     cursor: pointer;
     position: absolute;
     left: 25%;
@@ -199,13 +199,17 @@ section .section-container .plant-grid .plant-box .cart{
     background: transparent;
     padding: 15px 40px;
     border-radius: 10px;
+    border: none;
     transition: .2s ease-in-out;
 }
-section .section-container .plant-grid .plant-box .cart:hover{
+.plant-box:hover img {
+    opacity: 0.5;
+}
+section .section-container .plant-grid .plant-box button:hover{
     filter: drop-shadow(0px 4px 10px #01601abb);
     transform: scale(1.1);
 }
-section .section-container .plant-grid .plant-box:hover .cart{
+section .section-container .plant-grid .plant-box:hover button{
     color: #0F6845;
     background: #FFFFFF;
 }
@@ -396,4 +400,102 @@ footer .top-side .right-part a{
     text-align: center;
     color: #FFFFFF;
     
+}
+
+/* contact page */
+
+.contact-container {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    height: 1080px;
+    background-image: url(../img/annie-spratt-yyXw1lGJypI-unsplash\ 1.png);
+    background-repeat: no-repeat;
+}
+.inner-contact-conteiner{
+    width: 97%;
+    position: absolute;
+    top: 2.5%;
+    bottom: 2.5%;
+    left: 1.2%;
+    background-color: #01601a8a;
+}
+.contact-container .inner-contact-conteiner h2{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 28px 0 115px 0;
+}
+.contact-container .inner-contact-conteiner .contact-info{
+    margin:0 115px ;
+}
+.contact-container .inner-contact-conteiner .contact-info .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container .inner-contact-conteiner .contact-info .info h6{
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 50px 0 100px 0;
+}
+.flex-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 190px;
+}
+label {
+    display: block;
+    margin:65px 0 15px;
+    color: #ECF1EE;
+}
+input[type=text] {
+    width: 390px;
+    height: 40px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+    background-image: url('../assets/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0 12px 50px;
+    outline: none;
+}
+input[type=email] {
+    width: 390px;
+    height: 40px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+    background-image: url('../assets/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 0 12px 50px;
+    outline: none;
+}
+.textarea{
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 35%;
+    margin-right: 6s5%;
+}
+textarea {
+    padding: 12px;
+    border: 1px solid rgba(117, 70, 74, 0.7);
+    border-radius: 10px;
+    border: none;
+}
+iframe {
+    margin:65px 0 15px;
+    align-items: center;
+    justify-content: center;
 }
