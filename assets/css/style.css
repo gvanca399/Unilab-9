@@ -1,5 +1,22 @@
 @import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: hsl(123, 51%, 86%);
+    margin-block: 1em;
+    border-radius: 15vw;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(71, 90, 62, 0.501);
+    border: .3em solid hsl(123, 51%, 86%);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(71, 90, 62, 0.702);
+}
+
 body {
     font-family: 'Helvetica Neue', sans-serif;
     font-family: 'Helvetica 25 UltraLight', sans-serif;
@@ -333,7 +350,7 @@ footer .top-side .left-part p{
     position: relative;
 }
 
-input[type=email] {
+.footer-email[type=email] {
     width: 310px;
     height: 50px;
     border: 1px solid #FFFFFF;
@@ -410,7 +427,6 @@ footer .top-side .right-part a{
     width: 100%;
     height: 1080px;
     background-image: url(../img/annie-spratt-yyXw1lGJypI-unsplash\ 1.png);
-    background-repeat: no-repeat;
 }
 .inner-contact-conteiner{
     width: 97%;
@@ -461,7 +477,7 @@ label {
 input[type=text] {
     width: 390px;
     height: 40px;
-    border: 1px solid rgba(117, 70, 74, 0.7);
+    border:none;
     border-radius: 10px;
     font-size: 16px;
     background-image: url('../assets/search.png');
@@ -473,7 +489,7 @@ input[type=text] {
 input[type=email] {
     width: 390px;
     height: 40px;
-    border: 1px solid rgba(117, 70, 74, 0.7);
+    border: none;
     border-radius: 10px;
     font-size: 16px;
     background-image: url('../assets/search.png');
@@ -486,11 +502,10 @@ input[type=email] {
     margin-top: 6px;
     margin-bottom: 16px;
     margin-left: 35%;
-    margin-right: 6s5%;
 }
 textarea {
     padding: 12px;
-    border: 1px solid rgba(117, 70, 74, 0.7);
+    border: none;
     border-radius: 10px;
     border: none;
 }
@@ -498,4 +513,21 @@ iframe {
     margin:65px 0 15px;
     align-items: center;
     justify-content: center;
+}
+.map{margin-bottom: 100px;}
+.map h3{
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin: 70px 0 55px 0;
+}
+.map p{
+    width: 1043px;
+    border: 1px solid #01601B;
+    padding: 50px 80px;
+    margin: 0 auto;
 }
